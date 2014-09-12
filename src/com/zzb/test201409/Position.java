@@ -31,6 +31,13 @@ public class Position  implements Cloneable{
         this.y = y;
     }
 
+    /**
+     * @return the sum
+     */
+//    public int getSum(Sum sum) {
+//        return  sum.print(x,y);
+//    }
+
     @Override
     protected Position clone()  {
         Position p = null;
