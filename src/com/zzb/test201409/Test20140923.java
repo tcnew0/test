@@ -24,17 +24,19 @@ public class Test20140923 {
 		String var_d = "a"+"a";
 		String var_e = "a".concat("a");
 		String var_aa = new String("a");
-		System.out.println(var_a == var_b);
-		System.out.println(var_a == var_c);
-		System.out.println(var_a == var_aa);
-		System.out.println(var_d == temp);
-		System.out.println(var_e == temp);
+		System.out.println(var_a == var_b);//true
+		System.out.println(var_a == var_c);//true
+		System.out.println(var_a == var_aa);//false
+		System.out.println(var_d == temp);//true
+		System.out.println(var_e == temp);//false
 		
 		var_a += var_b;
-		System.out.println(var_a == temp);
+		System.out.println(var_a == temp);//false
 		
+		// = 和equals 的区别
 		var_c = var_c + var_b;
-		System.out.println(var_a == temp);
+		System.out.println(var_c.equals(temp));//true
+		System.out.println(var_c == temp);//false
 	}
 
 }
